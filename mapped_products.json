@@ -78,5 +78,225 @@
     "image": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
     "categoryId": "groceries",
     "featured": false
+  },
+  {
+    "name": "Chanel Coco Noir Eau De",
+    "slug": "chanel-coco-noir-eau-de",
+    "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+    "price": 129.99,
+    "stock": 58,
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+    "categoryId": "fragrances",
+    "featured": false
+  },
+  {
+    "name": "Dior J'adore",
+    "slug": "dior-jadore",
+    "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+    "price": 89.99,
+    "stock": 98,
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+    "categoryId": "fragrances",
+    "featured": false
+  },
+  {
+    "name": "Dolce Shine Eau de",
+    "slug": "dolce-shine-eau-de",
+    "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+    "price": 69.99,
+    "stock": 4,
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+    "categoryId": "fragrances",
+    "featured": false
+  },
+  {
+    "name": "Gucci Bloom Eau de",
+    "slug": "gucci-bloom-eau-de",
+    "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+    "price": 79.99,
+    "stock": 91,
+    "image": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+    "categoryId": "fragrances",
+    "featured": false
+  },
+  {
+    "name": "Annibale Colombo Sofa",
+    "slug": "annibale-colombo-sofa",
+    "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+    "price": 2499.99,
+    "stock": 60,
+    "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+    "categoryId": "furniture",
+    "featured": false
+  },
+  {
+    "name": "Bedside Table African Cherry",
+    "slug": "bedside-table-african-cherry",
+    "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+    "price": 299.99,
+    "stock": 64,
+    "image": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+    "categoryId": "furniture",
+    "featured": false
+  },
+  {
+    "name": "Knoll Saarinen Executive Conference Chair",
+    "slug": "knoll-saarinen-executive-conference-chair",
+    "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+    "price": 499.99,
+    "stock": 26,
+    "image": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+    "categoryId": "furniture",
+    "featured": false
+  },
+  {
+    "name": "Wooden Bathroom Sink With Mirror",
+    "slug": "wooden-bathroom-sink-with-mirror",
+    "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+    "price": 799.99,
+    "stock": 7,
+    "image": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+    "categoryId": "furniture",
+    "featured": false
+  },
+  {
+    "name": "Beef Steak",
+    "slug": "beef-steak",
+    "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+    "price": 12.99,
+    "stock": 86,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Cat Food",
+    "slug": "cat-food",
+    "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+    "price": 8.99,
+    "stock": 46,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Chicken Meat",
+    "slug": "chicken-meat",
+    "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+    "price": 9.99,
+    "stock": 97,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Cooking Oil",
+    "slug": "cooking-oil",
+    "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
+    "price": 4.99,
+    "stock": 10,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Cucumber",
+    "slug": "cucumber",
+    "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
+    "price": 1.49,
+    "stock": 84,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Dog Food",
+    "slug": "dog-food",
+    "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
+    "price": 10.99,
+    "stock": 71,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Eggs",
+    "slug": "eggs",
+    "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
+    "price": 2.99,
+    "stock": 9,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Fish Steak",
+    "slug": "fish-steak",
+    "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
+    "price": 14.99,
+    "stock": 74,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Green Bell Pepper",
+    "slug": "green-bell-pepper",
+    "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+    "price": 1.29,
+    "stock": 33,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Green Chili Pepper",
+    "slug": "green-chili-pepper",
+    "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
+    "price": 0.99,
+    "stock": 3,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Honey Jar",
+    "slug": "honey-jar",
+    "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
+    "price": 6.99,
+    "stock": 34,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Ice Cream",
+    "slug": "ice-cream",
+    "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "price": 5.49,
+    "stock": 27,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Juice",
+    "slug": "juice",
+    "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
+    "price": 3.99,
+    "stock": 50,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
+  },
+  {
+    "name": "Kiwi",
+    "slug": "kiwi",
+    "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
+    "price": 2.49,
+    "stock": 99,
+    "image": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+    "categoryId": "groceries",
+    "featured": false
   }
 ]

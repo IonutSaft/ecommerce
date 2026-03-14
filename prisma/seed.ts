@@ -22,21 +22,25 @@ const categoriesData: Prisma.CategoryCreateInput[] = [
 async function main() {
   console.log("Seeding database...");
 
-  // 1. Create categories and build a slug -> real ID map
-  console.log("Creating categories...");
+  // 1. Upsert categories and build a slug -> real ID map
+  console.log("Upserting categories...");
   const categoryIdBySlug: Record<string, string> = {};
 
   for (const category of categoriesData) {
-    const created = await prisma.category.create({ data: category });
-    categoryIdBySlug[created.slug] = created.id;
+    const upserted = await prisma.category.upsert({
+      where: { slug: category.slug },
+      update: { name: category.name },
+      create: category,
+    });
+    categoryIdBySlug[upserted.slug] = upserted.id;
   }
 
   // 2. Read products from mapped_products.json
   const productsFilePath = path.join(process.cwd(), "mapped_products.json");
   const productsData = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
-  // 3. Create products, resolving categoryId from the slug map
-  console.log(`Creating ${productsData.length} products...`);
+  // 3. Upsert products, resolving categoryId from the slug map
+  console.log(`Upserting ${productsData.length} products...`);
   for (const product of productsData) {
     const resolvedCategoryId = categoryIdBySlug[product.categoryId];
 
@@ -47,8 +51,18 @@ async function main() {
       );
     }
 
-    await prisma.product.create({
-      data: {
+    await prisma.product.upsert({
+      where: { slug: product.slug },
+      update: {
+        name: product.name,
+        description: product.description,
+        price: product.price,
+        stock: product.stock,
+        image: product.image,
+        featured: product.featured,
+        categoryId: resolvedCategoryId,
+      },
+      create: {
         name: product.name,
         slug: product.slug,
         description: product.description,
