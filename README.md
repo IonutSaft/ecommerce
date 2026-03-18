@@ -73,7 +73,7 @@ A full-stack, high-performance e-commerce application built with the latest tech
    ```bash
    npx prisma generate
    npx prisma migrate dev --name init
-   npx tsx prisma/seed.ts
+   npx prisma db seed
    ```
 
 5. **Start the development server:**
