@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { auth, signOut } from "@/lib/auth";
+import HamburgerMenu from "./HamburgerMenu";
 
 interface Category {
   id: string;
@@ -17,13 +18,14 @@ export default async function Navbar({ categories }: NavbarProps) {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-4">
           <Link
             href="/"
             className="text-2xl font-black tracking-tighter text-gray-900"
           >
             MODERN<span className="text-blue-600">STORE</span>
           </Link>
+          <HamburgerMenu categories={categories} />
         </div>
 
         <div className="flex-1 max-w-xl px-12 hidden md:block">
@@ -88,25 +90,6 @@ export default async function Navbar({ categories }: NavbarProps) {
             </Link>
           )}
         </div>
-      </div>
-      
-      {/* Categories Sub-menu */}
-      <div className="px-6 pb-4 flex gap-8 overflow-x-auto no-scrollbar">
-        <Link 
-          href="/products" 
-          className="text-[13px] font-black uppercase tracking-widest text-gray-400 hover:text-blue-600 transition-colors shrink-0"
-        >
-          All Products
-        </Link>
-        {categories.map((category) => (
-          <Link
-            key={category.id}
-            href={`/products?category=${category.slug}`}
-            className="text-[13px] font-black uppercase tracking-widest text-gray-400 hover:text-blue-600 transition-colors shrink-0"
-          >
-            {category.name}
-          </Link>
-        ))}
       </div>
     </nav>
   );
