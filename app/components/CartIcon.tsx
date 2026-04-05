@@ -9,6 +9,7 @@ export default function CartIcon() {
   const totalItems = useCartStore((state) =>
     state.items.reduce((total, item) => total + item.quantity, 0)
   );
+  const openDrawer = useCartStore((state) => state.openDrawer);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -17,8 +18,7 @@ export default function CartIcon() {
 
   if (!mounted) {
     return (
-      <Link
-        href="/cart"
+      <button
         className="relative p-2 text-gray-900 hover:text-blue-600 transition-colors"
       >
         <svg
@@ -36,13 +36,13 @@ export default function CartIcon() {
           <path d="M3 6h18" />
           <path d="M16 10a4 4 0 0 1 -8 0" />
         </svg>
-      </Link>
+      </button>
     );
   }
 
   return (
-    <Link
-      href="/cart"
+    <button
+      onClick={openDrawer}
       className="relative p-2 text-gray-900 hover:text-blue-600 transition-colors"
     >
       <svg
@@ -65,6 +65,6 @@ export default function CartIcon() {
           {totalItems}
         </span>
       )}
-    </Link>
+    </button>
   );
 }
