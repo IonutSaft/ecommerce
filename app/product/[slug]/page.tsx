@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import AddToCartButton from "../../components/AddToCartButton";
 
 interface ProductPageProps {
   params: Promise<{
@@ -87,12 +88,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   </span>
                </div>
                
-               <button 
-                 disabled={product.stock === 0}
+               <AddToCartButton 
+                 product={{
+                   id: product.id,
+                   name: product.name,
+                   price: Number(product.price),
+                   image: product.image || "",
+                   slug: product.slug,
+                 }}
                  className="w-full bg-gray-900 text-white py-6 rounded-[2rem] text-[15px] font-black uppercase tracking-widest hover:bg-gray-800 active:scale-95 transition-all shadow-2xl shadow-gray-200 disabled:opacity-50 disabled:scale-100"
                >
                  {product.stock > 0 ? 'Add to Shopping Bag' : 'Join Waitlist'}
-               </button>
+               </AddToCartButton>
             </div>
             
             <div className="grid grid-cols-2 gap-4">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Decimal } from "@prisma/client/runtime/index-browser";
+import AddToCartButton from "./AddToCartButton";
 
 interface ProductCardProps {
   product: {
@@ -56,9 +57,15 @@ export default function ProductCard({ product }: ProductCardProps) {
           </p>
         </div>
 
-        <button className="w-full mt-2 bg-gray-50 text-gray-900 py-3.5 rounded-2xl text-[13px] font-black uppercase tracking-widest hover:bg-gray-900 hover:text-white transition-all duration-300">
-          Add to Cart
-        </button>
+        <AddToCartButton
+          product={{
+            id: product.id,
+            name: product.name,
+            price: Number(product.price),
+            image: product.image || "",
+            slug: product.slug,
+          }}
+        />
       </div>
     </div>
   );

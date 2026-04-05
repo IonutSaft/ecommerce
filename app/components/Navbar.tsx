@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { auth, signOut } from "@/lib/auth";
 import HamburgerMenu from "./HamburgerMenu";
+import CartIcon from "./CartIcon";
 
 interface Category {
   id: string;
@@ -59,6 +60,7 @@ export default async function Navbar({ categories }: NavbarProps) {
         </div>
 
         <div className="flex items-center gap-6">
+          <CartIcon />
           {session?.user ? (
             <div className="flex items-center gap-4">
               <Link
