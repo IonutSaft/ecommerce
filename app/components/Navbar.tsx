@@ -23,7 +23,7 @@ export default async function Navbar({ categories }: NavbarProps) {
             href="/"
             className="text-2xl font-black tracking-tighter text-gray-900"
           >
-            MODERN<span className="text-blue-600">STORE</span>
+            E<span className="text-blue-600">COMMERCE</span>
           </Link>
           <HamburgerMenu categories={categories} />
         </div>

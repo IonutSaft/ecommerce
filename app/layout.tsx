@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ecommerce-ivory-nine-53.vercel.app/"),
   title: {
     default: "Modern E-commerce | Premium Shopping Experience",
     template: "%s | Modern E-commerce",
